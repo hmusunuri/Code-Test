@@ -1,0 +1,12 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <h2>{{ currentDuration | secondsToDateTime | date:'HH:mm:ss'}}</h2>
+  <a (click)="startCall()" *ngIf="!isActiveCounter" href="javascript:void(0);" class="btn btn-danger">Start Counter</a>
+  <a (click)="endCall()" *ngIf="isActiveCounter" href="javascript:void(0);" class="btn btn-danger">End Counter</a>
+
+
+</div>
+
